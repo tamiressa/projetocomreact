@@ -52,7 +52,7 @@ const Formulario = (props) => {
                         label="Time"
                         itens = {props.times}
                         valor={times}
-                        aoAlterado={valor => setTimes(valor)}
+                        aoAlterado={valor => setTime(valor)}
                         />
                         
                 <Botao>
