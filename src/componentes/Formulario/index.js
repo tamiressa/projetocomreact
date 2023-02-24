@@ -10,7 +10,7 @@ const Formulario = (props) => {
     const [nick, setNick] = useState ('')
     const [cidade, setCidade] = useState ('')
     const [imagem, setImagem] = useState ('')
-    const [times, setTimes] = useState ('')
+    const [time, setTime] = useState ('')
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
@@ -18,7 +18,7 @@ const Formulario = (props) => {
            nick: nick,
            cidade: cidade,
            imagem: imagem,
-           times: times
+           time: time
         })
 
     }
@@ -51,7 +51,7 @@ const Formulario = (props) => {
                         obrigatorio={true}
                         label="Time"
                         itens = {props.times}
-                        valor={times}
+                        valor={time}
                         aoAlterado={valor => setTime(valor)}
                         />
                         
